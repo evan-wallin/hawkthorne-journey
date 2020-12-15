@@ -16,6 +16,7 @@ local recipes = require 'items/recipes'
 local tooltip = require 'tooltip'
 local Item = require 'items/item'
 local controls = require('inputcontroller').get()
+local dialog = require 'dialog'
 
 local Inventory = {}
 Inventory.__index = Inventory
@@ -610,6 +611,7 @@ function Inventory:addItem(item, sfx, callback)
   end 
   local slot = self:nextAvailableSlot(pageName)
   if not slot then
+    self.dialog = dialog.new("Inventory full", nil, drawwable, small)
     if sfx ~= false then
       sound.playSfx('dbl_beep')
     end
