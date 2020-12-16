@@ -3,14 +3,14 @@
 -- Manages the player's currently held items
 -----------------------------------------------------------------------
 
-local app       = require 'app'
-local anim8     = require 'vendor/anim8'
-local sound     = require 'vendor/TEsound'
-local camera    = require 'camera'
-local debugger  = require 'debugger'
-local json      = require 'hawk/json'
-local GS        = require 'vendor/gamestate'
-local fonts     = require 'fonts'
+local app = require 'app'
+local anim8 = require 'vendor/anim8'
+local sound = require 'vendor/TEsound'
+local camera = require 'camera'
+local debugger = require 'debugger'
+local json = require 'hawk/json'
+local GS = require 'vendor/gamestate'
+local fonts = require 'fonts'
 local utils = require 'utils'
 local recipes = require 'items/recipes'
 local tooltip = require 'tooltip'
